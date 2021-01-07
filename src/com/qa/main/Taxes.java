@@ -46,7 +46,9 @@ public class Taxes {
 		
 		float percTaxed = percentageSalaryToBeTaxed(salary);
 		
-		if(salary < 15000) {
+		amountTaxed = salary * (percTaxed/100);
+		
+		/* if(salary < 15000) {
 			
 			//percTaxed = 0;
 			
@@ -71,6 +73,7 @@ public class Taxes {
 			amountTaxed = salary * (percTaxed/100);
 			
 		}
+		*/
 		
 		
 		return amountTaxed;
